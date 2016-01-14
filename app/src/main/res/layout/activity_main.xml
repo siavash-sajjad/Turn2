@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <org.berans.view.BRtextview
+                fontName="iransans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                android:text="@string/splash_app_name"
+                android:textSize="@dimen/xLargeTextSize"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/asdsa"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xxxLargeHeight"
+        android:layout_marginLeft="@dimen/mediumMargin"
+        android:layout_marginRight="@dimen/mediumMargin"
+        android:layout_marginTop="@dimen/mediumMargin"
+        android:background="@mipmap/ic_item_back_ground"
+        android:clickable="true"
+        android:gravity="center_vertical|right"
+        android:onClick="btnGetTurnClick"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <org.berans.view.BRtextview
+                fontName="iransans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                android:text="اخذ نوبت"
+                android:textSize="@dimen/xLargeTextSize"/>
+
+            <org.berans.view.BRtextview
+                fontName="iransans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مشاهده لیست دکترهای تحت پوشش نرم افزار"
+                android:textSize="@dimen/largeTextSize"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mediumMargin"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:src="@mipmap/line_1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:src="@mipmap/ic_add"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xxxLargeHeight"
+        android:layout_marginLeft="@dimen/mediumMargin"
+        android:layout_marginRight="@dimen/mediumMargin"
+        android:background="@mipmap/ic_item_back_ground"
+        android:clickable="true"
+        android:gravity="center_vertical|right"
+        android:onClick="btnCancelTurnClick"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <org.berans.view.BRtextview
+                fontName="iransans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                android:text="لغو نوبت"
+                android:textSize="@dimen/xLargeTextSize"/>
+
+            <org.berans.view.BRtextview
+                fontName="iransans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لغو نوبت های اخذ شده"
+                android:textSize="@dimen/largeTextSize"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mediumMargin"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:src="@mipmap/line_1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:src="@mipmap/ic_delete"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xxxLargeHeight"
+        android:layout_marginLeft="@dimen/mediumMargin"
+        android:layout_marginRight="@dimen/mediumMargin"
+        android:background="@mipmap/ic_item_back_ground"
+        android:clickable="true"
+        android:gravity="center_vertical|right"
+        android:onClick="btnGettingTurnClick"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <org.berans.view.BRtextview
+                fontName="iransans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                android:text="نوبت های اخذ شده"
+                android:textSize="@dimen/xLargeTextSize"/>
+
+            <org.berans.view.BRtextview
+                fontName="iransans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مشاهده لیست نوبت های اخذ شده"
+                android:textSize="@dimen/largeTextSize"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mediumMargin"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:src="@mipmap/line_1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:src="@mipmap/ic_1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xxxLargeHeight"
+        android:layout_marginLeft="@dimen/mediumMargin"
+        android:layout_marginRight="@dimen/mediumMargin"
+        android:background="@mipmap/ic_item_back_ground"
+        android:clickable="true"
+        android:gravity="center_vertical|right"
+        android:onClick="btnMessageClick"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <org.berans.view.BRtextview
+                fontName="iransans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                android:text="پیام ها"
+                android:textSize="@dimen/xLargeTextSize"/>
+
+            <org.berans.view.BRtextview
+                fontName="iransans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مشاهده پیام های ارسال شده برای شما"
+                android:textSize="@dimen/largeTextSize"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mediumMargin"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:src="@mipmap/line_1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:src="@mipmap/ic_3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xxxLargeHeight"
+        android:layout_marginLeft="@dimen/mediumMargin"
+        android:layout_marginRight="@dimen/mediumMargin"
+        android:background="@mipmap/ic_item_back_ground"
+        android:clickable="true"
+        android:onClick="btnSettingClick"
+        android:gravity="center_vertical|right"
+
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <org.berans.view.BRtextview
+                fontName="iransans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                android:text="تنظیمات"
+                android:textSize="@dimen/xLargeTextSize"/>
+
+            <org.berans.view.BRtextview
+                fontName="iransans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تنظیمات برنامه"
+                android:textSize="@dimen/largeTextSize"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mediumMargin"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:src="@mipmap/line_1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:src="@mipmap/ic_setting"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xxxLargeHeight"
+        android:layout_marginLeft="@dimen/mediumMargin"
+        android:layout_marginRight="@dimen/mediumMargin"
+        android:background="@mipmap/ic_item_back_ground"
+        android:clickable="true"
+        android:onClick="btnAboutClick"
+        android:gravity="center_vertical|right"
+
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <org.berans.view.BRtextview
+                fontName="iransans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                android:text="درباره ما"
+                android:textSize="@dimen/xLargeTextSize"/>
+
+            <org.berans.view.BRtextview
+                fontName="iransans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="معرفی شرکت"
+                android:textSize="@dimen/largeTextSize"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mediumMargin"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:src="@mipmap/line_1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:src="@mipmap/ic_symbol"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

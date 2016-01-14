@@ -1,0 +1,54 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="xxSmallWidth">10dp</dimen>
+    <dimen name="xSmallWidth">20dp</dimen>
+    <dimen name="mediumWidth">30dp</dimen>
+    <dimen name="largeWidth">40dp</dimen>
+    <dimen name="xLargeWidth">50dp</dimen>
+    <dimen name="xxLargeWidth">60dp</dimen>
+    <dimen name="xxxLargeWidth">70dp</dimen>
+    <dimen name="xxxxLargeWidth">80dp</dimen>
+    <dimen name="xxxxxLargeWidth">100dp</dimen>
+
+
+    <dimen name="xxSmallHeight">10dp</dimen>
+    <dimen name="xSmallHeight">20dp</dimen>
+    <dimen name="mediumHeight">30dp</dimen>
+    <dimen name="largeHeight">40dp</dimen>
+    <dimen name="xLargeHeight">50dp</dimen>
+    <dimen name="xxLargeHeight">60dp</dimen>
+    <dimen name="xxxLargeHeight">70dp</dimen>
+    <dimen name="xxxxLargeHeight">80dp</dimen>
+    <dimen name="xxxxxLargeHeight">100dp</dimen>
+
+
+    <dimen name="xxxSmallMargin">2dp</dimen>
+    <dimen name="xxSmallMargin">3dp</dimen>
+    <dimen name="xSmallMargin">5dp</dimen>
+    <dimen name="mediumMargin">10dp</dimen>
+    <dimen name="largeMargin">15dp</dimen>
+    <dimen name="xLargeMargin">20dp</dimen>
+    <dimen name="xxLargeMargin">25dp</dimen>
+    <dimen name="xxxLargeMargin">30dp</dimen>
+
+    <dimen name="xxSmallPadding">3dp</dimen>
+    <dimen name="xSmallPadding">5dp</dimen>
+    <dimen name="mediumPadding">10dp</dimen>
+    <dimen name="largePadding">15dp</dimen>
+    <dimen name="xLargePadding">20dp</dimen>
+    <dimen name="xxLargePadding">25dp</dimen>
+
+
+    <dimen name="xxSmallTextSize">3sp</dimen>
+    <dimen name="xSmallTextSize">5sp</dimen>
+    <dimen name="mediumTextSize">10sp</dimen>
+    <dimen name="largeTextSize">15sp</dimen>
+    <dimen name="xLargeTextSize">20sp</dimen>
+    <dimen name="xxLargeTextSize">25sp</dimen>
+    <dimen name="xxxLargeTextSize">35sp</dimen>
+</resources>

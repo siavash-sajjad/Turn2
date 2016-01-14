@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="@dimen/mediumMargin"
+              android:layout_marginRight="@dimen/mediumMargin"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border_drawable"
+        android:layout_marginBottom="@dimen/xxxSmallMargin"
+        android:paddingTop="@dimen/mediumPadding"
+        android:paddingBottom="@dimen/mediumPadding"
+        android:paddingRight="@dimen/mediumPadding"
+        android:paddingLeft="@dimen/mediumPadding"
+        android:gravity="right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/xxSmallMargin"
+            android:gravity="right">
+
+            <org.berans.view.BRtextview
+                android:id="@+id/lblDoctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xxLargeTextSize"
+                fontName="iransans"
+                android:textColor="@color/colorPrimary"
+                android:text="دکتر هادی شاهمرادی"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mediumMargin"
+            android:gravity="right">
+
+            <org.berans.view.BRtextview
+                android:id="@+id/lblSpecialityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/largeTextSize"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                fontName="iransans"
+                android:textColor="@color/grayColor_13"
+                android:text="دکتر هادی شاهمرادی"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mediumMargin"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <org.berans.view.BRtextview
+                android:id="@+id/lblTurnTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/largeTextSize"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                fontName="iransans"
+                android:textColor="@color/grayColor_13"
+                android:text="18:30"/>
+
+            <org.berans.view.BRtextview
+                android:layout_width="@dimen/xxLargeWidth"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/largeTextSize"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                fontName="iransans"
+                android:textColor="@color/grayColor_13"
+                android:text="@string/turn_time"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/grayColor_12"
+                android:layout_marginLeft="@dimen/xLargeMargin"
+                android:layout_marginRight="@dimen/xLargeMargin"/>
+
+            <org.berans.view.BRtextview
+                android:id="@+id/lblTurnDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/largeTextSize"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                fontName="iransans"
+                android:textColor="@color/grayColor_13"
+                android:text="1394/09/18"/>
+
+            <org.berans.view.BRtextview
+                android:layout_width="@dimen/xxLargeWidth"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/largeTextSize"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                fontName="iransans"
+                android:textColor="@color/grayColor_13"
+                android:text="@string/turn_date"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="@dimen/xSmallMargin"
+            android:layout_marginBottom="@dimen/xSmallMargin"
+            android:background="@mipmap/message_separator"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <org.berans.view.BRtextview
+                android:id="@+id/lblTurnStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xLargeTextSize"
+                android:textColor="@color/greenColor_4"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                fontName="iransans"
+                android:text="در انتظار برقراری ارتباط با سرور"/>
+
+            <org.berans.view.BRtextview
+                android:layout_width="@dimen/xxLargeWidth"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/largeTextSize"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                fontName="iransans"
+                android:textColor="@color/grayColor_13"
+                android:text="@string/turn_status"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_marginLeft="@dimen/mediumMargin"
+              android:layout_marginRight="@dimen/mediumMargin"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border_drawable"
+        android:layout_marginBottom="@dimen/xxxSmallMargin"
+        android:paddingTop="@dimen/mediumPadding"
+
+        android:paddingRight="@dimen/mediumPadding"
+        android:paddingLeft="@dimen/mediumPadding"
+        android:gravity="right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mediumMargin"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="right">
+
+                <org.berans.view.BRtextview
+                    android:id="@+id/lblMessageTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/xLargeTextSize"
+                    fontName="iransans"
+                    android:textColor="@color/colorPrimary"
+                    android:text="دکتر هادی شاهمرادی"/>
+
+                <org.berans.view.BRtextview
+                    android:id="@+id/lblMessageText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/largeTextSize"
+                    fontName="iransans"
+                    android:textColor="@color/grayColor_13"
+                    android:text="دکتر هادی شاهمرادی"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mediumMargin"
+                android:src="@mipmap/ic_message_item"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@mipmap/message_separator"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mediumMargin"
+            android:layout_marginBottom="@dimen/mediumMargin"
+            android:gravity="left">
+
+            <org.berans.view.BRtextview
+                android:id="@+id/lblTurnDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/largeTextSize"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                fontName="iransans"
+                android:textColor="@color/grayColor_13"
+                android:text="1394/09/18"/>
+
+            <org.berans.view.BRtextview
+                android:layout_width="@dimen/xxxxLargeWidth"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/largeTextSize"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                fontName="iransans"
+                android:textColor="@color/grayColor_13"
+                android:text="تاریخ انتشار:"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

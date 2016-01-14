@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_background">
+
+    <LinearLayout
+        android:id="@+id/llDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mediumMargin"
+        android:layout_marginRight="@dimen/mediumMargin"
+        android:layout_marginBottom="@dimen/xxxLargeMargin"
+        android:gravity="right"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xxxxLargeHeight"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <org.berans.view.BRtextview
+                    android:id="@+id/lblDoctorName"
+                    fontName="iransans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/mediumMargin"
+                    android:text="دکتر رضا رحیمی"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/xxLargeTextSize" />
+
+                <org.berans.view.BRtextview
+                    android:id="@+id/lblSpecialityName"
+                    fontName="iransans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/mediumMargin"
+                    android:text="فوق تخصص گوش و حلق و بینی"
+                    android:textColor="@color/grayColor_13"
+                    android:textSize="@dimen/largeTextSize" />
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/xxxLargeWidth"
+                android:layout_height="@dimen/xxxLargeHeight"
+                android:layout_marginLeft="@dimen/mediumMargin"
+                android:src="@mipmap/ic_doctor"
+                app:civ_border_color="#FFffffff"
+                app:civ_border_width="2dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/mediumMargin"
+            android:background="@color/grayColor_9" />
+
+        <org.berans.view.BRtextview
+            android:id="@+id/lblTrackingCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xLargeTextSize"
+            android:layout_marginTop="@dimen/mediumMargin"
+            android:layout_marginBottom="@dimen/mediumMargin"
+            android:text="کدرهگیری: 121314151617181920" />
+
+        <org.berans.view.BRtextview
+            android:id="@+id/lblDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xLargeTextSize"
+            android:layout_marginBottom="@dimen/mediumMargin"
+            android:text="تاریخ: 1394/10/01" />
+
+        <org.berans.view.BRtextview
+            android:id="@+id/lblTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xLargeTextSize"
+            android:layout_marginBottom="@dimen/mediumMargin"
+            android:text="زمان: 13:01" />
+
+        <org.berans.view.BRtextview
+            android:id="@+id/lblTurn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نوبت شما: 25"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/xxLargeTextSize" />
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llDetail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/llFooter"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp">
+
+        <org.berans.view.BRbutton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="بازگشت به صفحه اصلی"
+            android:textSize="@dimen/mediumTextSize" />
+
+    </LinearLayout>
+</RelativeLayout>

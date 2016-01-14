@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/whiteColor"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xxLargeHeight"
+        android:background="@mipmap/dialog_header"
+        android:gravity="right|center_vertical">
+
+        <org.berans.view.BRtextview
+            fontName="iransans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:text="جستجو پزشک"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/xLargeMargin"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mediumMargin"
+            android:src="@mipmap/ic_header_search"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/mediumMargin"
+        android:layout_marginRight="@dimen/mediumMargin"
+        android:layout_marginTop="@dimen/mediumMargin"
+        android:gravity="right|center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xLargeHeight"
+            android:gravity="right|center_vertical"
+            android:layout_marginBottom="@dimen/xxxSmallMargin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:gravity="right|center_vertical">
+
+                <Spinner
+                    android:id="@+id/cmbState"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/spinner_background"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:gravity="right|center_vertical">
+
+                <org.berans.view.BRtextview
+                    fontName="iransans"
+                    android:layout_width="@dimen/xxxxxLargeWidth"
+                    android:layout_height="wrap_content"
+                    android:text="استان:"
+                    android:textSize="@dimen/xLargeTextSize"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xLargeHeight"
+            android:gravity="right|center_vertical"
+            android:layout_marginBottom="@dimen/xxxSmallMargin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:gravity="right|center_vertical">
+
+                <Spinner
+                    android:id="@+id/cmbCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/spinner_background"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:gravity="right|center_vertical">
+
+                <org.berans.view.BRtextview
+                    fontName="iransans"
+                    android:layout_width="@dimen/xxxxxLargeWidth"
+                    android:layout_height="wrap_content"
+                    android:text="شهرستان:"
+                    android:textSize="@dimen/xLargeTextSize"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xLargeHeight"
+            android:gravity="right|center_vertical"
+            android:layout_marginBottom="@dimen/xxxSmallMargin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:gravity="right|center_vertical">
+
+                <Spinner
+                    android:id="@+id/cmbHospital"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/spinner_background"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:gravity="right|center_vertical">
+
+                <org.berans.view.BRtextview
+                    fontName="iransans"
+                    android:layout_width="@dimen/xxxxxLargeWidth"
+                    android:layout_height="wrap_content"
+                    android:text="انتخاب مرکز:"
+                    android:textSize="@dimen/xLargeTextSize"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xLargeHeight"
+            android:gravity="right|center_vertical"
+            android:layout_marginBottom="@dimen/xxxSmallMargin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:gravity="right|center_vertical">
+
+                <Spinner
+                    android:id="@+id/cmbSpeciality"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/spinner_background"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:gravity="right|center_vertical">
+
+                <org.berans.view.BRtextview
+                    fontName="iransans"
+                    android:layout_width="@dimen/xxxxxLargeWidth"
+                    android:layout_height="wrap_content"
+                    android:text="انتخاب تخصص:"
+                    android:textSize="@dimen/xLargeTextSize"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xLargeHeight"
+            android:gravity="right|center_vertical"
+            android:layout_marginBottom="@dimen/xxxSmallMargin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:gravity="right|center_vertical">
+
+                <Spinner
+                    android:id="@+id/cmbTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/spinner_background"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:gravity="right|center_vertical">
+
+                <org.berans.view.BRtextview
+                    fontName="iransans"
+                    android:layout_width="@dimen/xxxxxLargeWidth"
+                    android:layout_height="wrap_content"
+                    android:text="انتخاب زمان:"
+                    android:textSize="@dimen/xLargeTextSize"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xLargeHeight"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/xxxSmallMargin"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:gravity="right|center_vertical">
+
+                <Spinner
+                    android:id="@+id/cmbInsuranceType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/spinner_background"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:gravity="right|center_vertical">
+
+                <org.berans.view.BRtextview
+                    fontName="iransans"
+                    android:layout_width="@dimen/xxxxxLargeWidth"
+                    android:layout_height="wrap_content"
+                    android:text="نوع بیمه:"
+                    android:textSize="@dimen/xLargeTextSize"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xLargeHeight"
+            android:layout_marginBottom="@dimen/mediumMargin"
+            android:layout_marginTop="@dimen/xSmallMargin"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <org.berans.view.BRbutton
+                android:id="@+id/btnSearchDoctor"
+                fontName="iransans"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/search_button_drawable"
+                android:text="جستجو"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/xLargeTextSize"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

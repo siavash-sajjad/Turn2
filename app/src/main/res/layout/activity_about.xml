@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteColor"
+    tools:context="ir.sadeghlabs.turn.activity.AboutActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <org.berans.view.BRtextview
+                fontName="iransans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xxxSmallMargin"
+                android:text="@string/about"
+                android:textSize="@dimen/xLargeTextSize" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@mipmap/about_user_background"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/xSmallMargin"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="20"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/ic_sadegh"
+                            app:civ_border_color="#dbdbdb"
+                            app:civ_border_width="2dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/xSmallMargin"
+                        android:layout_weight="40"
+                        android:background="@drawable/ovel_drawable"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="Sadegh"
+                            android:textColor="#9c8236"
+                            android:textSize="@dimen/xLargeTextSize" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bakhshandeh"
+                            android:textColor="#9c8236" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/xSmallMargin"
+                        android:layout_weight="70"
+                        android:background="@drawable/drawable_2"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="62dp"
+                            android:layout_height="62dp"
+                            android:layout_marginLeft="@dimen/xSmallMargin"
+                            android:background="@drawable/drawable_3"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Manager"
+                                android:textColor="#a7ffe1" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="62dp"
+                            android:layout_height="62dp"
+                            android:layout_marginLeft="@dimen/xSmallMargin"
+                            android:background="@drawable/drawable_3"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="JAVA"
+                                android:textSize="@dimen/xLargeTextSize"
+                                android:textColor="#a7ffe1" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="@dimen/xSmallMargin"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="@dimen/xSmallMargin"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:layout_marginRight="@dimen/xSmallMargin"
+                        android:background="@drawable/drawable_4"
+                        android:gravity="right|center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="62dp"
+                            android:layout_height="62dp"
+                            android:layout_marginRight="@dimen/xSmallMargin"
+                            android:background="@drawable/drawable_5"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="UX"
+                                android:textColor="#ffc0aa"
+                                android:textSize="@dimen/xxLargeTextSize" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="62dp"
+                            android:layout_height="62dp"
+                            android:layout_marginRight="@dimen/xSmallMargin"
+                            android:background="@drawable/drawable_5"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="UI"
+                                android:textColor="#ffc0aa"
+                                android:textSize="@dimen/xxLargeTextSize" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="20"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/ic_milad"
+                            app:civ_border_color="#dbdbdb"
+                            app:civ_border_width="2dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/xSmallMargin"
+                        android:background="@drawable/drawable_6">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="Milad"
+                            android:textColor="#b1ddff"
+                            android:textSize="@dimen/xLargeTextSize" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Davoodabadi"
+                            android:textColor="#b1ddff" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/whiteColor"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:layout_marginTop="@dimen/xxLargeMargin"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_10"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/xxLargeMargin"
+                    android:layout_marginBottom="@dimen/xxLargeMargin">
+
+                <org.berans.view.BRtextview
+                    fontName="iransans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xLargeMargin"
+                    android:layout_marginRight="@dimen/xLargeMargin"
+                    android:text="نرم افزار تخصصی نوبت‌دهی پزشک توسط فناوری اطلاعات کوثر و به سفارش شرکت رسا در دی ماه ۱۳۹۴ طراحی و آماده ورود به شبکه‌ توزیع اپلیکیشن‌های آندرویدی شد. تلاش مجموعه در جهت آسانتر کردن فرآیند اخذ نوبت بیماران عزیز برای مراجعه به پزشک بوده است. امید است توانسته باشیم در جهت رفع یکی از نیازهای شما عزیزان قدم برداریم."
+                    android:textSize="@dimen/xLargeTextSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/mediumMargin"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_20"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

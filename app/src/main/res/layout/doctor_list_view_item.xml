@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xxxxLargeHeight"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/mediumMargin"
+        android:layout_marginRight="@dimen/mediumMargin"
+        android:gravity="right|center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right">
+
+            <org.berans.view.BRtextview
+                android:id="@+id/lblDoctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xLargeTextSize"
+                android:layout_marginRight="@dimen/mediumMargin"
+                fontName="iransans"
+                android:textColor="@color/colorPrimary"
+                android:text="دکتر رضا رحیمی"/>
+
+            <org.berans.view.BRtextview
+                android:id="@+id/lblDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/largeTextSize"
+                android:layout_marginRight="@dimen/mediumMargin"
+                fontName="iransans"
+                android:textColor="@color/grayColor_13"/>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/xxxLargeWidth"
+            android:layout_height="@dimen/xxxLargeHeight"
+            android:layout_marginLeft="@dimen/mediumMargin"
+            android:src="@mipmap/ic_medical88"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFffffff"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginRight="@dimen/xxxLargeMargin"
+        android:layout_marginLeft="@dimen/xxxLargeMargin"
+        android:layout_marginTop="@dimen/mediumMargin"
+        android:background="@color/grayColor_9"/>
+
+</LinearLayout>

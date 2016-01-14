@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.berans.view.BRtextview
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip"
+    android:textColor="@color/grayColor_13"
+    android:textSize="20sp"
+    android:id="@+id/text1"
+    />

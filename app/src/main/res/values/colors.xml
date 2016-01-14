@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#07b7ce</color>
+    <color name="colorPrimaryDark">#00bcd5</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="mainColor">#214b90</color>
+    <color name="whiteColor">#fff</color>
+    <color name="blackColor">#000</color>
+    <color name="background_material_light">#ffffff</color>
+    <color name="primary_text_default_material_light">#ffffff</color>
+    <color name="foreground_material_light">#ffffff</color>
+
+
+    <color name="greenColor">#25a13c</color>
+    <color name="darkGreenColor">#1b702b</color>
+    <color name="greenColor_2">#82c456</color>
+    <color name="greenColor_3">#27ae60</color>
+    <color name="greenColor_4">#60d454</color>
+
+
+
+
+    <color name="grayColor_1">#f2f2f2</color>
+    <color name="grayColor_2">#808080</color>
+    <color name="grayColor_3">#cecece</color>
+    <color name="grayColor_4">#eee</color>
+    <color name="grayColor_5">#999</color>
+    <color name="grayColor_6">#4c4c4c</color>
+    <color name="grayColor_7">#e6e6e6</color>
+    <color name="grayColor_8">#e0e0e0</color>
+    <color name="grayColor_9">#989898</color>
+    <color name="grayColor_10">#a3a3a3</color>
+    <color name="grayColor_11">#e8e8e8</color>
+    <color name="grayColor_12">#e5e5e5</color>
+    <color name="grayColor_13">#858585</color>
+
+
+    <color name="blueColor_1">#88afe0</color>
+    <color name="blueColor_2">#6297dc</color>
+
+
+
+
+    <color name="separatorColor_1">#bfbfbf</color>
+</resources>
